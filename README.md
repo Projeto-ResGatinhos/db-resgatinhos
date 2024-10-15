@@ -1,0 +1,3 @@
+# Projeto ResGatinhos
+
+Breve descrição: O projeto "Briefing Resgatinhos" é uma aplicação voltada para facilitar a criação de briefings para a ONG ResGatinhos. A plataforma permite a coleta de informações essenciais para a realização do projeto de criação de site e organização do banco de dados, com foco em ajudar a ONG e os voluntários a organizarem os detalhes necessários de forma clara e objetiva.

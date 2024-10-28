@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="1eXwbO7XMWIGn_1errnK" name="Página-1">
-        <mxGraphModel dx="2667" dy="1663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1925" dy="1413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#ffffff" math="0" shadow="0">
             <root>
                 <object label="" id="0">
                     <mxCell/>
@@ -1963,7 +1963,7 @@
                 <mxCell id="6gZBVYLtisoLSwWlhlkZ-684" value="Tipo_De_Documento" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=10;fontColor=#424242;" parent="1" vertex="1">
                     <mxGeometry x="90" y="355" width="60" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="6gZBVYLtisoLSwWlhlkZ-686" value="Comprovante_Redidencia" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=10;fontColor=#424242;" parent="1" vertex="1">
+                <mxCell id="6gZBVYLtisoLSwWlhlkZ-686" value="Comprovante_Residencia" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=10;fontColor=#424242;" parent="1" vertex="1">
                     <mxGeometry x="90" y="375" width="60" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="6gZBVYLtisoLSwWlhlkZ-729" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#424242;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="6gZBVYLtisoLSwWlhlkZ-689" target="19" edge="1">

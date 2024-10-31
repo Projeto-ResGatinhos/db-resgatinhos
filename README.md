@@ -55,6 +55,8 @@ O **modelo conceitual** pode ser encontrado no arquivo `docs/modelo-conceitual.d
 
 O **modelo lógico** está no arquivo `docs/modelo-logico.drawio`. Ele especifica as tabelas, colunas, tipos de dados e relações entre as tabelas de maneira detalhada, sendo a base para o desenvolvimento do modelo físico.
 
+![Modelo Lógico](./assets/models/modelo-logico.svg)
+
 ### Modelo Físico
 
 O **modelo físico** está no arquivo `docs/modelo-fisico.sql`. Este script contém a criação de tabelas, índices, relacionamentos e outros elementos necessários para implementar o banco de dados no Oracle.

@@ -49,6 +49,8 @@ db-resgatinhos/
 
 O **modelo conceitual** pode ser encontrado no arquivo `docs/modelo-conceitual.drawio`. Ele descreve de maneira simplificada as principais entidades e seus relacionamentos, servindo como uma visão geral do sistema.
 
+![Modelo Conceitual](./assets/models/modelo-conceitual.png)
+
 ### Modelo Lógico
 
 O **modelo lógico** está no arquivo `docs/modelo-logico.drawio`. Ele especifica as tabelas, colunas, tipos de dados e relações entre as tabelas de maneira detalhada, sendo a base para o desenvolvimento do modelo físico.

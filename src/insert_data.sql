@@ -1,0 +1,322 @@
+-- INSERT ONG RESGATINHOS SEDE
+INSERT INTO TB_END_ONG (
+  CEP,
+  RUA,
+  NUMERO,
+  COMPLEMENTO,
+  BAIRRO,
+  CIDADE,
+  UF
+) VALUES (
+  '03211-155',
+  'R. Iguara',
+  '704',
+  'Vila Alpina',
+  'Vila Alpina',
+  'São Paulo',
+  'SP'
+);
+
+INSERT INTO TB_TEL_ONG (
+  DDD,
+  NUMERO
+) VALUES (
+  '11',
+  '991169009'
+);
+
+INSERT INTO TB_ONG (
+  ID_END_ONG,
+  ID_TEL_ONG,
+  NOME,
+  CNPJ
+) VALUES (
+  1,
+  1,
+  'ResGatinhos Sede',
+  '53108690000163'
+);
+
+-- INSERT COLABORADOR
+INSERT INTO TB_END_COLABORADOR (
+  CEP,
+  RUA,
+  NUMERO,
+  COMPLEMENTO,
+  BAIRRO,
+  CIDADE,
+  UF
+) VALUES (
+  '01234-567',
+  'Av. das Flores',
+  '123',
+  'Apto 45',
+  'Jardim das Rosas',
+  'São Paulo',
+  'SP'
+);
+
+INSERT INTO TB_TEL_COLABORADOR (
+  DDD,
+  NUMERO
+) VALUES (
+  '11',
+  '999052314'
+);
+
+INSERT INTO TB_COLABORADOR (
+  ID_ONG,
+  ID_END_COLABORADOR,
+  ID_TEL_COLABORADOR,
+  NOME,
+  CARGO,
+  DT_NASCIMENTO,
+  TIPO_DOCUMENTO,
+  DOCUMENTO
+) VALUES (
+  1,
+  1,
+  1,
+  'Julia Gasparotto',
+  'Admin',
+  TO_DATE('26-10-1996', 'DD-MM-YYYY'),
+  'RG',
+  '12345678901234'
+);
+
+-- INSERT VALOR CAIXA
+INSERT INTO TB_CAIXA (
+  TIPO_OPERACAO,
+  DATA_OPERACAO,
+  VALOR,
+  DESCRICAO
+) VALUES (
+  'ENTRADA',
+  TO_DATE('20-10-2024', 'DD-MM-YYYY'),
+  1500.00,
+  'Caixa Inicial'
+);
+
+INSERT INTO TB_CAIXA (
+  TIPO_OPERACAO,
+  DATA_OPERACAO,
+  VALOR,
+  DESCRICAO
+) VALUES (
+  'SAIDA',
+  TO_DATE('20-10-2024', 'DD-MM-YYYY'),
+  500.00,
+  'Compra de Ração'
+);
+
+-- INSERT DOAÇÃO MONETÁRIA
+INSERT INTO TB_DOADOR (
+  NOME,
+  LINK_REDE_SOCIAL
+) VALUES (
+  'Thamy Silva',
+  '@Thamy_Silva923'
+);
+
+INSERT INTO TB_CAMPANHA (
+  DT_INICIO,
+  DT_FINAL,
+  OBJETIVO
+) VALUES (
+  TO_DATE('01-11-2024', 'DD-MM-YYYY'),
+  TO_DATE('01-12-2024', 'DD-MM-YYYY'),
+  'Recolher valor para exames do Jack'
+);
+
+INSERT INTO TB_DOACAO (
+  ID_DOADOR,
+  ID_CAMPANHA,
+  VALOR
+) VALUES (
+  1,
+  1,
+  100.00
+);
+
+-- INSERT TIPOS DE PRODUTO
+INSERT INTO TB_TIPO_PRODUTO (
+  DESCRICAO
+) VALUES (
+  'Ração'
+);
+
+INSERT INTO TB_TIPO_PRODUTO (
+  DESCRICAO
+) VALUES (
+  'Areia'
+);
+
+INSERT INTO TB_TIPO_PRODUTO (
+  DESCRICAO
+) VALUES (
+  'Sachê'
+);
+
+-- INSERT PRODUTOS
+INSERT INTO TB_PRODUTO (
+  ID_DOACAO,
+  ID_TIPO_PRODUTO,
+  VALIDADE,
+  QTD_ENTRADA,
+  PESO
+) VALUES (
+  1,
+  1,
+  CURRENT_DATE,
+  50,
+  20.00
+);
+
+INSERT INTO TB_PRODUTO (
+  ID_DOACAO,
+  ID_TIPO_PRODUTO,
+  VALIDADE,
+  QTD_ENTRADA,
+  PESO
+) VALUES (
+  1,
+  2,
+  CURRENT_DATE,
+  30,
+  10.00
+);
+
+INSERT INTO TB_PRODUTO (
+  ID_DOACAO,
+  ID_TIPO_PRODUTO,
+  DATA_ENTRADA,
+  VALIDADE,
+  QTD_ENTRADA,
+  PESO
+) VALUES (
+  1,
+  3,
+  TO_DATE('01-10-2024', 'DD-MM-YYYY'),
+  TO_DATE('01-12-2025', 'DD-MM-YYYY'),
+  20,
+  5.00
+);
+
+-- INSERT GATOS
+INSERT INTO TB_GATO (
+  ID_ONG,
+  NOME_GATO,
+  ID_COLAB_RESPONSAVEL,
+  CEP_RESGATE,
+  DESCRICAO_SAUDE,
+  RACA,
+  COR,
+  DT_NASC_APROXIMADA
+) VALUES (
+  1,
+  'Jack',
+  1,
+  '12345-678',
+  'Saudável, porém com histórico de alergia',
+  'SRD',
+  'Cinza',
+  TO_DATE('05-10-2022', 'DD-MM-YYYY')
+);
+
+INSERT INTO TB_GATO (
+  ID_ONG,
+  NOME_GATO,
+  ID_COLAB_RESPONSAVEL,
+  CEP_RESGATE,
+  DESCRICAO_SAUDE,
+  RACA,
+  COR,
+  DT_NASC_APROXIMADA
+) VALUES (
+  1,
+  'Mimi',
+  1,
+  '87654321',
+  'Necessita de acompanhamento veterinário',
+  'Persa',
+  'Branco',
+  TO_DATE('15-03-2021', 'DD-MM-YYYY')
+);
+
+INSERT INTO TB_GATO (
+  ID_ONG,
+  NOME_GATO,
+  ID_COLAB_RESPONSAVEL,
+  CEP_RESGATE,
+  DESCRICAO_SAUDE,
+  RACA,
+  COR,
+  DT_NASC_APROXIMADA
+) VALUES (
+  1,
+  'Flora',
+  1,
+  '11223344',
+  'Recuperado de cirurgia',
+  'Frajola',
+  'Preto e Branco',
+  TO_DATE('20-01-2023', 'DD-MM-YYYY')
+);
+
+-- INSERT ADOTANTE
+INSERT INTO TB_END_ADOTANTE (
+  CEP,
+  RUA,
+  NUMERO,
+  BAIRRO,
+  CIDADE,
+  UF
+) VALUES (
+  '12345-678',
+  'Rua das Flores',
+  '123',
+  'Centro',
+  'São Paulo',
+  'SP'
+);
+
+INSERT INTO TB_TEL_ADOTANTE (
+  DDD,
+  NUMERO
+) VALUES (
+  '11',
+  '987651234'
+);
+
+INSERT INTO TB_ADOTANTE (
+  NOME,
+  DOCUMENTO,
+  TIPO_DE_DOCUMENTO,
+  COMPROVANTE_RESIDENCIA,
+  ID_END_ADOTANTE,
+  ID_TEL_ADOTANTE,
+  INSTAGRAM,
+  RESIDENCIASEGURA
+) VALUES (
+  'Maria Silva',
+  '12345678901',
+  'CPF',
+  'Comprovante de residência válido',
+  21,
+  5,
+  '@mariasilva',
+  'SIM'
+);
+
+-- INSERT ADOÇÃO
+INSERT INTO TB_ADOCAO (
+  ID_ADOTANTE,
+  ID_GATO,
+  ID_ONG,
+  DT_ADOCAO
+) VALUES (
+  21,
+  24,
+  1,
+  TO_DATE('31-10-2024', 'DD-MM-YYYY')
+);

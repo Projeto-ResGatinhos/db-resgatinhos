@@ -59,7 +59,9 @@ O **modelo lógico** está no arquivo `docs/modelo-logico.drawio`. Ele especific
 
 ### Modelo Físico
 
-O **modelo físico** está no arquivo `docs/modelo-fisico.sql`. Este script contém a criação de tabelas, índices, relacionamentos e outros elementos necessários para implementar o banco de dados no Oracle.
+O **modelo físico** está no arquivo `docs/modelo-fisico.drawio`. Este modelo contém os scripts para criação de tabelas, índices, relacionamentos e outros elementos necessários para implementar o banco de dados no Oracle.
+
+![Modelo Físico](./assets/models/modelo-fisico.svg)
 
 ## Como Usar
 

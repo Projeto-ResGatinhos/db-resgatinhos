@@ -1,229 +1,226 @@
 <mxfile host="65bd71144e">
     <diagram id="YHvSOUFx3NSuWDXsWDk8" name="Página-1">
-        <mxGraphModel dx="4315" dy="4530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="4840" dy="2974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="9">
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="2" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="TB_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="2" value="TB_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="520" y="400" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="2">
+                <mxCell id="3" value="ID_ONG INT PK,&#10;  ID_END_ONG INT NOT NULL FK,&#10;  ID_TEL_ONG INT NOT NULL FK,&#10;  NOME VARCHAR(100) NOT NULL,&#10;  CNPJ CHAR(14) NOT NULL UNIQUE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="2" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="TB_END_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="6" value="TB_END_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="320" y="40" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="6">
+                <mxCell id="7" value="  ID_END_ONG INT PK,&#10;  CEP CHAR(10) NOT NULL,&#10;  RUA VARCHAR(100) NOT NULL,&#10;  NUMERO VARCHAR(10),&#10;  COMPLEMENTO VARCHAR(50),&#10;  BAIRRO VARCHAR(50) NOT NULL,&#10;  CIDADE VARCHAR(50) NOT NULL,&#10;  UF CHAR(2) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="6" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="TB_TEL_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;verticalAlign=middle;" vertex="1" parent="1">
+                <mxCell id="8" value="TB_TEL_ONG" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;verticalAlign=middle;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="720" y="40" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="8">
+                <mxCell id="9" value="ID_TEL_ONG INT PK,&#10;  DDD CHAR(2) NOT NULL,&#10;  NUMERO CHAR(9) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="8" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="10" target="13">
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="10" target="13" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="TB_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="10" value="TB_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-80" y="40" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="10">
+                <mxCell id="11" value="ID_COLABORADOR INT PK,&#10;  ID_ONG INT NOT NULL FK,&#10;  ID_END_COLABORADOR INT NOT NULL FK,&#10;  ID_TEL_COLABORADOR INT NOT NULL FK,&#10;  NOME VARCHAR(100) NOT NULL,&#10;  CARGO VARCHAR(50) NOT NULL,&#10;  DT_NASCIMENTO DATE NOT NULL,&#10;  TIPO_DOCUMENTO VARCHAR(50) NOT NULL,&#10;  DOCUMENTO CHAR(14) NOT NULL UNIQUE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="10" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="TB_TEL_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;verticalAlign=middle;" vertex="1" parent="1">
+                <mxCell id="12" value="TB_TEL_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;verticalAlign=middle;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="120" y="-320" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="12">
+                <mxCell id="13" value="ID_TEL_COLABORADOR INT PK,&#10;  DDD CHAR(2) NOT NULL,&#10;  NUMERO CHAR(9) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="12" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="TB_END_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="14" value="TB_END_COLABORADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-280" y="-320" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="14">
+                <mxCell id="15" value="ID_END_COLABORADOR INT PK,&#10;CEP CHAR(10) NOT NULL,&#10;RUA VARCHAR(100) NOT NULL,&#10;NUMERO VARCHAR(10),&#10;COMPLEMENTO VARCHAR(50),&#10;BAIRRO VARCHAR(50) NOT NULL,&#10;CIDADE VARCHAR(50) NOT NULL,&#10;UF CHAR(2) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="14" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;html=1;fontColor=#424242;rounded=1;endArrow=none;endFill=0;strokeColor=#424242;strokeWidth=2;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7" target="2">
+                <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;html=1;fontColor=#424242;rounded=1;endArrow=none;endFill=0;strokeColor=#424242;strokeWidth=2;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="7" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="630" y="330" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11" target="3">
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="11" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="30" y="320" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="20" target="27">
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="20" target="27" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="TB_CAMPANHA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="20" value="TB_CAMPANHA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1120" y="40" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="20">
+                <mxCell id="21" value="ID_CAMPANHA INT PK,&#10;  DT_INICIO DATE NOT NULL,&#10;  DT_FINAL DATE NOT NULL,&#10;  OBJETIVO VARCHAR(200) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="20" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="21">
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="3" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1060" y="320" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="15" target="10">
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="15" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="TB_DOACAO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="26" value="TB_DOACAO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1120" y="-320" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="26">
+                <mxCell id="27" value="ID_DOACAO INT PK,&#10;  ID_DOADOR INT NOT NULL FK,&#10;  ID_CAMPANHA INT NOT NULL FK,&#10;  ID_PRODUTO INT FK,&#10;  VALOR DECIMAL(10, 2)," style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="26" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="TB_DOADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="28" value="TB_DOADOR" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1520" y="-320" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="28">
+                <mxCell id="29" value="ID_DOADOR INT PK,&#10;  NOME VARCHAR(100) NOT NULL,&#10;  INSTAGRAM VARCHAR(100) UNIQUE NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="28" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="27" target="29">
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="27" target="29" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="TB_CONSULTA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="32" value="TB_CONSULTA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1120" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="32">
+                <mxCell id="33" value="ID_CONSULTA INT PK,&#10;  ID_GATO INT NOT NULL FK,&#10;  ID_HOSPITAL_VET INT NOT NULL FK,&#10;  ID_PROCEDIMENTO INT NOT NULL FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="32" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="TB_ESTOQUE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="35" value="TB_ESTOQUE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="720" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="35">
+                <mxCell id="36" value="ID_ESTOQUE INT PK,&#10;  ID_PRODUTO INT NOT NULL FK,&#10;  QUANTIDADE INT NOT NULL,&#10;  DATA_MODIFICACAO DATE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="35" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="3" target="35">
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="3" target="35" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="TB_PRODUTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="38" value="TB_PRODUTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="720" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="38">
+                <mxCell id="39" value="ID_PRODUTO INT PK,&#10;  ID_DOACAO INT NOT NULL FK,&#10;  ID_TIPO_PRODUTO INT NOT NULL FK,&#10;  DATA_ENTRADA DATE NOT NULL,&#10;  VALIDADE DATE,&#10;  QTD_ENTRADA INT NOT NULL,&#10;  PESO DECIMAL(10, 2)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="38" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="TB_TIPO_PRODUTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="40" value="TB_TIPO_PRODUTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="720" y="1480" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="40">
+                <mxCell id="41" value="&#10;ID_TIPO_PRODUTO INT PK,&#10;DESCRICAO VARCHAR(100) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="40" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="36" target="38">
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="36" target="38" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="39" target="40">
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="39" target="40" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="TB_PROCEDIMENTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="44" value="TB_PROCEDIMENTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1520" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="44">
+                <mxCell id="45" value=" ID_PROCEDIMENTO INT PK,&#10;  ID_TIPO_PROCEDIMENTO INT NOT NULL FK,&#10;  ID_GATO INT NOT NULL FK,&#10;  ID_CONSULTA INT NOT NULL FK,&#10;  DT_PROCEDIMENTO DATE NOT NULL,&#10;  LAUDO_VETERINARIO VARCHAR(200),&#10;  OBSERVACOES VARCHAR(200),&#10;  VALOR DECIMAL(10, 2) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="44" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="TB_TIPO_PROCEDIMENTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="46" value="TB_TIPO_PROCEDIMENTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1920" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="46">
+                <mxCell id="47" value="ID_TIPO_PROCEDIMENTO INT PK,&#10;  DESCRICAO VARCHAR(100) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="46" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="TB_HOSPITAL_VET" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="48" value="TB_HOSPITAL_VET" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1120" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="48">
+                <mxCell id="49" value="ID_HOSPITAL_VET INT PK,&#10;  NOME VARCHAR(100) NOT NULL,&#10;  ID_TEL_HOSPITAL INT NOT NULL FK,&#10;  ID_END_HOSPITAL INT NOT NULL FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="48" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="89" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="48">
-                    <mxGeometry y="240" width="280" as="geometry"/>
-                </mxCell>
-                <mxCell id="50" value="TB_TEL_HOSPITAL" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="50" value="TB_TEL_HOSPITAL" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1520" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="50">
+                <mxCell id="51" value="ID_TEL_HOSPITAL INT PK,&#10;  DDD CHAR(2) NOT NULL,&#10;  NUMERO CHAR(9) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="50" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="TB_END_HOSPITAL" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="52" value="TB_END_HOSPITAL" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="1120" y="1480" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="52">
+                <mxCell id="53" value="ID_END_HOSPITAL INT PK,&#10;  CEP CHAR(10) NOT NULL,&#10;  RUA VARCHAR(100) NOT NULL,&#10;  NUMERO VARCHAR(10),&#10;  COMPLEMENTO VARCHAR(50),&#10;  BAIRRO VARCHAR(50) NOT NULL,&#10;  CIDADE VARCHAR(50) NOT NULL,&#10;  UF CHAR(2) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="52" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="33" target="45">
+                <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="33" target="45" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="45" target="47">
+                <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="45" target="47" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="49" target="52">
+                <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="49" target="52" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="TB_GATO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="59" value="TB_GATO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-80" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="59">
+                <mxCell id="60" value="ID_GATO INT PK,&#10;  ID_ONG INT NOT NULL FK,&#10;  LINK_FOTO VARCHAR(255),&#10;  NOME_GATO VARCHAR(100) NOT NULL,&#10;  ID_COLAB_RESPONSAVEL INT NOT NULL FK,&#10;  CEP_RESGATE CHAR(10),&#10;  DESCRICAO_RESGATE VARCHAR(200),&#10;  DESCRICAO_SAUDE VARCHAR(200),&#10;  RACA VARCHAR(50),&#10;  COR VARCHAR(50),&#10;  DT_NASC_APROXIMADA DATE,&#10;  PODE_DIVULGAR CHAR(3) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="59" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="73" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="62" target="3">
+                <mxCell id="73" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="62" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="TB_CAIXA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="62" value="TB_CAIXA" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="320" y="760" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="63" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="62">
+                <mxCell id="63" value="ID_CAIXA INT PK,&#10;  TIPO_OPERACAO VARCHAR(10) NOT NULL,&#10;  DATA_OPERACAO DATE NOT NULL,&#10;  VALOR DECIMAL(10, 2) NOT NULL,&#10;  DESCRICAO VARCHAR(200)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="62" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="3" target="32">
+                <mxCell id="70" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="3" target="32" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="33" target="48">
+                <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="33" target="48" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="49" target="51">
+                <mxCell id="72" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="49" target="51" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="3" target="59">
+                <mxCell id="74" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="3" target="59" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" value="TB_ADOCAO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="75" value="TB_ADOCAO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-80" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="75">
+                <mxCell id="76" value=" ID_ADOCAO INT PK,&#10;  ID_ADOTANTE INT NOT NULL FK,&#10;  ID_GATO INT NOT NULL FK,&#10;  ID_ONG INT NOT NULL FK,&#10;  DT_ADOCAO DATE NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="75" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="TB_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="77" value="TB_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-480" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="77">
+                <mxCell id="78" value="ID_ADOTANTE INT PK,&#10;  NOME VARCHAR(100) NOT NULL,&#10;  TIPO_DE_DOCUMENTO VARCHAR(50) NOT NULL,&#10;  DOCUMENTO CHAR(14) NOT NULL UNIQUE,&#10;  COMPROVANTE_RESIDENCIA VARCHAR(200),&#10;  ID_END_ADOTANTE INT NOT NULL FK,&#10;  ID_TEL_ADOTANTE INT NOT NULL FK,&#10;  INSTAGRAM VARCHAR(100),&#10;  RESIDENCIASEGURA CHAR(3) NOT NULL,&#10;  DESCRICAO_RESIDENCIA VARCHAR(200),&#10;  POSSUI_RESTRICAO CHAR(3) NOT NULL,&#10;  MOTIVO_RESTRICAO VARCHAR(200)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="77" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" value="TB_END_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="79" value="TB_END_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=11;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-480" y="1480" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="79">
+                <mxCell id="80" value="  ID_END_ADOTANTE INT PK,&#10;  CEP CHAR(10) NOT NULL,&#10;  RUA VARCHAR(100) NOT NULL,&#10;  NUMERO VARCHAR(10),&#10;  COMPLEMENTO VARCHAR(50),&#10;  BAIRRO VARCHAR(50) NOT NULL,&#10;  CIDADE VARCHAR(50) NOT NULL,&#10;  UF CHAR(2) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="79" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="81" value="TB_TEL_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;" vertex="1" parent="1">
+                <mxCell id="81" value="TB_TEL_ADOTANTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=12;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#FFFFFF;fontColor=#424242;strokeColor=#424242;glass=0;swimlaneLine=1;spacing=0;spacingLeft=10;" parent="1" vertex="1">
                     <mxGeometry x="-880" y="1120" width="280" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="82" value="+ ATRIBUTOS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=20;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=2;spacingTop=20;spacingBottom=20;spacingRight=20;" vertex="1" parent="81">
+                <mxCell id="82" value="ID_TEL_ADOTANTE INT PK,&#10;  DDD CHAR(2) NOT NULL,&#10;  NUMERO CHAR(9) NOT NULL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=10;fontSize=11;verticalAlign=middle;resizable=0;rotatable=0;part=1;fontColor=#424242;spacing=0;spacingTop=20;spacingBottom=20;spacingRight=20;" parent="81" vertex="1">
                     <mxGeometry y="30" width="280" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="60" target="75">
+                <mxCell id="83" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="60" target="75" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="84" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="76" target="78">
+                <mxCell id="84" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="76" target="78" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="78" target="82">
+                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="78" target="82" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;" edge="1" parent="1" source="78" target="79">
+                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeColor=#424242;strokeWidth=2;fontColor=#424242;endArrow=none;endFill=0;spacing=0;spacingLeft=10;fontSize=11;" parent="1" source="78" target="79" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>

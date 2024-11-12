@@ -32,26 +32,37 @@ O projeto *ResGatinhos* é uma aplicação desenvolvida para auxiliar na criaç�
 
 ```bash
 db-resgatinhos/
-├── assets/                     # Arquivos de mídia do projeto
-│   ├── imagens/                # Imagens utilizadas no projeto
-│   │   └── logo-resgatinhos-de-sao-francisco.jpg # Logo do projeto
+├── assets/                     
+│   ├── images/                
+│   │   └── logo-resgatinhos-de-sao-francisco.jpg  # Logo do projeto
+│   └── models/                
+│       ├── modelo-conceitual.png                  # Imagem PNG do modelo conceitual
+│       ├── modelo-conceitual.svg                  # Imagem SVG do modelo conceitual
+│       ├── modelo-logico.png                      # Imagem PNG do modelo lógico
+│       ├── modelo-logico.svg                      # Imagem SVG do modelo lógico
+│       ├── modelo-fisico.png                      # Imagem PNG do modelo físico
+│       └── modelo-fisico.svg                      # Imagem SVG do modelo físico
 │
-├── docs/                       # Documentação do banco de dados
-│   ├── modelo-conceitual.drawio # Arquivo Draw.io do modelo conceitual
-│   ├── modelo-logico.drawio    # Arquivo Draw.io do modelo lógico
-│   └── modelo-fisico.sql       # Scripts do modelo físico (com Oracle)
+├── docs/                       
+│   ├── modelo-conceitual.drawio                   # Arquivo Draw.io do modelo conceitual
+│   ├── modelo-logico.drawio                       # Arquivo Draw.io do modelo lógico
+│   └── modelo-fisico.drawio                       # Arquivo Draw.io do modelo físico
 │
-├── scripts/                    # (opcional) Scripts automatizados (se necessário)
-│   └── create_db.sh            # Script para automatizar criação do banco
+├── scripts/                    
+│   └── create_db.sh                               # Script para criação do banco de dados
 │
-├── src/                        # Scripts de manipulação do banco
-│   ├── insert_data.sql         # Script de inserção de dados
-│   ├── update_data.sql         # Script de atualização de dados
-│   ├── delete_data.sql         # Script de remoção de dados
+├── src/                          
+│   ├── create_table.sql                           # Script de criação de tabelas
+│   ├── create_vw.sql                              # Script de criação de views
+│   ├── delete_data.sql                            # Script de remoção de dados
+│   ├── insert_data.sql                            # Script de inserção de dados
+│   └── update_data.sql                            # Script de atualização de dados
 │
-├── .gitignore                  # Arquivos a serem ignorados pelo Git
-└── README.md                   # README geral explicando o projeto
+├── .gitignore                                     # Arquivos a serem ignorados pelo Git
+├── LICENSE                                        # Arquivo de licença
+└── README.md                                      # Documentação principal do projeto
 ```
+
 ## 🎲 Modelos do Banco de Dados
 
 ### Modelo Conceitual

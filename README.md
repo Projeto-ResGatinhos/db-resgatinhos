@@ -16,13 +16,13 @@ Projeto de Modelagem de Banco de Dados Para ONG ResGatinhos.
 
 ## 📚 Índice
 
-- [Sobre](#🐱-sobre)
-- [Estrutura do Projeto](#🌟-estrutura-do-projeto)
-- [Modelos do Banco de Dados](#🎲-modelos-do-banco-de-dados)
-- [Como Usar](#👾-como-usar)
-- [Contribuição](#🧑‍🤝‍🧑-contribuições)
-- [Desenvolvedor](#☕️-desenvolvido-por)
-- [Licença](#📝-licença)
+- [Sobre](#-sobre)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Modelos do Banco de Dados](#-modelos-do-banco-de-dados)
+- [Como Usar](#-como-usar)
+- [Contribuição](#-contribuições)
+- [Desenvolvedor](#-desenvolvido-por)
+- [Licença](#-licença)
 
 ## 🐱 Sobre
 
